@@ -4,7 +4,7 @@
   "description": "Detailed HTML reporter for ESLINT.",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start test/e2e/e2e-server.js",
+    "start": "pm2 start test/e2e/e2e-server.js --watch",
     "stop": "pm2 delete all",
     "test": "npm run command-line && npm run grunt-test",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git commit -am \"chore(CHANGELOG): Updating Changelog\"",
